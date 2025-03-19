@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #FFE4E1;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background-color: #FFB6C1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+/* Chat Area Styling */
+.chat-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+}
+
+.chat-header {
+    background-color: #FF69B4;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.received {
+    background-color: #F0F0F0;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #FF69B4;
+    color: white;
+    align-self: flex-end;
+}
+
+.ai-suggestion {
+    padding: 10px 15px;
+    background-color: #FFF0F5;
+    border-left: 4px solid #FF69B4;
+    border-radius: 8px;
+}
+
+.ai-suggestion button {
+    margin-top: 5px;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Input Area Styling */
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #FF69B4;
+    border-radius: 6px;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
